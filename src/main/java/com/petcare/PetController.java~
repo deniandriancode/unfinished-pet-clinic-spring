@@ -1,0 +1,13 @@
+package com.petcare;
+
+import org.springframework.stereotype.*;
+import org.springframework.web.bind.annotation.*;
+
+@Controller
+public class PetController {
+
+	@GetMapping("/")
+	public String getIndex() {
+		return "index";
+	}
+}
